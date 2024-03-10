@@ -33,15 +33,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port = 465;  // SMTP server port
 
         //Recipients
-        $mail->setFrom($email, $name);
-        $mail->addAddress('contact@gamingforaustralia.com.au');
+        $mail->setFrom('noreply@gamingforaustralia.com.au', 'Gaming for Australia');
+        $mail->addAddress($email, $name); // User's email address
 
         // Content
-        $mail->isHTML(false); // Set email format to HTML
-        $mail->Subject = 'Contact Form Submission';
-        $mail->Body    = "Name: $name\nEmail: $email\n\n$message";
+        $mail->isHTML(true); // Set email format to HTML
+        $mail->Subject = 'Thank you for contacting Gaming for Australia';
+        $mail->Body    = "Dear $name,<br><br>Thank you for contacting us! We have received your message and will get back to you soon.<br><br>Best regards,<br>Gaming for Australia";
 
+        // Send confirmation email to the user
         $mail->send();
+
+        // Send notification email to admin
+        $mail->clearAddresses();
+        $mail->addAddress('contact@gamingforaustralia.com.au');
+        $mail->Subject = 'Contact Form Submission';
+        $mail->Body    = "Name: $name<br>Email: $email<br><br>Message:<br>$message";
+        $mail->send();
+
         $status = "Thank you for contacting us! We will get back to you soon.";
     } catch (Exception $e) {
         $status = "Oops! Something went wrong. Please try again later. Error: {$mail->ErrorInfo}";
