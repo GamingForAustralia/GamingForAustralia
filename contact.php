@@ -38,16 +38,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="column">
             <h1>Contact GamingForAustralia</h1>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                <label for="name">Your Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-
-                <label for="email">Your Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
-                <input type="submit" name="submit" value="Submit">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit" name="submit" value="Submit">Submit</button>
             </form>
             <?php echo "<p>$status</p>"; ?>
         </div>
