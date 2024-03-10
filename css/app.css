@@ -86,6 +86,10 @@ nav ul li a:hover {
 }
 
 /* Form styles */
-form {
-    color: #fff; /* Set form text color to white */
+form,
+form label,
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    color: #fff !important; /* Set form text color to white */
 }
