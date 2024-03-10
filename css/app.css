@@ -84,3 +84,8 @@ nav ul li a:hover {
     width: 100%;
     height: auto;
 }
+
+/* Form styles */
+form {
+    color: #fff; /* Set form text color to white */
+}
