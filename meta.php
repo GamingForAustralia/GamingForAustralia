@@ -1,5 +1,3 @@
-<meta charset="UTF-8">
-<title>GamingForAustralia - Home</title>
 <link rel="stylesheet" href="css/foundation.min.css">
 <link rel="stylesheet" href="css/app.css">
 
