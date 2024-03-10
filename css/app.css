@@ -38,6 +38,10 @@ footer {
     background-color: #333; /* Dark footer background */
     color: #fff; /* White footer text */
     padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 /* Navigation Menu */
