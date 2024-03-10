@@ -94,7 +94,7 @@ form {
 form label {
     display: inline-block; /* Display labels inline */
     width: 30%; /* Adjust width of labels */
-    margin-right: 5%; /* Add spacing between labels and inputs */
+    margin-right: 2%; /* Add spacing between labels and inputs */
     margin-bottom: 10px; /* Add space below labels */
     font-weight: bold; /* Make labels bold */
     color: #fff; /* Set label text color to white */
@@ -103,7 +103,7 @@ form label {
 form input[type="text"],
 form input[type="email"],
 form textarea {
-    width: 65%; /* Adjust width of input fields */
+    width: 68%; /* Adjust width of input fields */
     padding: 10px; /* Add padding to input fields */
     margin-bottom: 20px; /* Add space below input fields */
     border-radius: 5px; /* Add rounded corners to input fields */
@@ -128,4 +128,18 @@ form input[type="submit"]:hover {
 
 .status-message {
     margin-top: 20px; /* Add space above status message */
+}
+
+form button[type="submit"] {
+    width: 100%; /* Make submit button full width */
+    background-color: #98B118; /* Set submit button background color */
+    color: #fff; /* Set submit button text color */
+    border: none; /* Remove button border */
+    padding: 10px; /* Add padding to button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Add rounded corners to button */
+}
+
+form button[type="submit"]:hover {
+    background-color: #7F80A1; /* Darken submit button color on hover */
 }
