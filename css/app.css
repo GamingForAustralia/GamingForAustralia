@@ -1,32 +1,32 @@
 /* Dark mode styles */
 body {
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: #1a1a1a; /* Background color for body */
+    color: #fff; /* Text color for body */
 }
 
 /* Primary and Secondary Colors */
 .primary-color {
-    color: #98B118;
+    color: #98B118; /* Primary color */
 }
 
 .secondary-color {
-    color: #7F80A1;
+    color: #7F80A1; /* Secondary color */
 }
 
 /* Links */
 a {
     color: #98B118; /* Primary color for links */
-    text-decoration: none;
+    text-decoration: none; /* Remove underline from links */
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline links on hover */
 }
 
 /* Header */
 header {
     background-color: #333; /* Dark header background */
-    padding: 20px;
+    padding: 20px; /* Add padding to header */
 }
 
 header h1 {
@@ -37,21 +37,21 @@ header h1 {
 footer {
     background-color: #333; /* Dark footer background */
     color: #fff; /* White footer text */
-    padding: 10px 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 100;
+    padding: 10px 20px; /* Add padding to footer */
+    position: fixed; /* Fix footer position at bottom */
+    bottom: 0; /* Stick footer to the bottom of the page */
+    width: 100%; /* Set footer width to full */
+    z-index: 100; /* Set z-index to ensure footer is on top */
 }
 
 /* Navigation Menu */
 nav ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove list bullets */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline; /* Display navigation items inline */
+    margin-right: 20px; /* Add space between navigation items */
 }
 
 nav ul li a {
@@ -59,37 +59,69 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline navigation links on hover */
 }
 
 /* General styles */
 .row {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 1200px; /* Maximum width for content */
+    margin: 0 auto; /* Center content horizontally */
+    padding: 20px; /* Add padding to content */
 }
 
 .column {
-    width: 100%;
+    width: 100%; /* Set column width to full */
 }
 
 /* Logo */
 .logo-link {
-    display: inline-block;
-    max-width: 200px;
-    width: 100%;
+    display: inline-block; /* Display logo as inline-block */
+    max-width: 200px; /* Limit maximum width of logo */
+    width: 100%; /* Set logo width to full */
 }
 
 .logo {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Set logo width to full */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Form styles */
-form,
-form label,
+form {
+    max-width: 500px; /* Limit form width */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+form label {
+    display: block; /* Ensure labels are on their own line */
+    margin-bottom: 10px; /* Add space below labels */
+    font-weight: bold; /* Make labels bold */
+}
+
 form input[type="text"],
 form input[type="email"],
 form textarea {
-    color: #fff !important; /* Set form text color to white */
+    width: 100%; /* Make input fields full width */
+    padding: 10px; /* Add padding to input fields */
+    margin-bottom: 20px; /* Add space below input fields */
+    border-radius: 5px; /* Add rounded corners to input fields */
+    border: 1px solid #ccc; /* Add a border to input fields */
+    background-color: #333; /* Darken input field background */
+    color: #fff; /* Set input text color to white */
+}
+
+form input[type="submit"] {
+    background-color: #98B118; /* Set submit button background color */
+    color: #fff; /* Set submit button text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Add padding to button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Add rounded corners to button */
+}
+
+form input[type="submit"]:hover {
+    background-color: #7F80A1; /* Darken submit button color on hover */
+}
+
+.status-message {
+    margin-top: 20px; /* Add space above status message */
 }
