@@ -1,4 +1,4 @@
-    <link rel="stylesheet" href="css/foundation.min.css">
+<link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="css/app.css">
 
     <!-- For modern browsers -->
