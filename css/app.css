@@ -91,7 +91,13 @@ nav ul li a:hover {
 }
 
 /* Logo */
+.logo-link {
+    display: inline-block;
+    max-width: 200px;
+    width: 100%;
+}
+
 .logo {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
