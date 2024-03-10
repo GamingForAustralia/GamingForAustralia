@@ -1,4 +1,3 @@
-<!-- header.php -->
 <header>
     <div class="row">
         <div class="column">
