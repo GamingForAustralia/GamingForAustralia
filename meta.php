@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="css/foundation.min.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/app.css">
 
     <!-- For modern browsers -->
