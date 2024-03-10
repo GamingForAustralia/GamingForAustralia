@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message'];
     
     // Set up email details
-    $to = "your_email@example.com"; // Change this to your email address
+    $to = "contact@gamingforaustralia.com.au";
     $subject = "Contact Form Submission";
     $body = "Name: $name\nEmail: $email\n\n$message";
     $headers = "From: $email";
