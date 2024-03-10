@@ -7,10 +7,10 @@
                     <li class="name">
                         <h1><a href="" class="logo-link"><img src="img/logo.png" alt="GamingForAustralia Logo" class="logo"></a> GamingForAustralia</h1>
                     </li>
-                    <li class="toggle-topbar menu-icon"><a><span>Menu</span></a></li>
+                    <li class="toggle-topbar menu-icon hide-for-medium"><a><span>Menu</span></a></li>
                 </ul>
                 <section class="top-bar-section">
-                    <ul class="right">
+                    <ul class="right hide-for-medium">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About</a></li>
                         <li><a href="podcast.php">Podcast</a></li>
