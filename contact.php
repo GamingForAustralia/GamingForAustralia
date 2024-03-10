@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <?php echo "<p>$status</p>"; ?>
         </div>
     </div>
-
+    <br><br><br><br>
     <!-- Footer -->
     <?php include('footer.php'); ?>
 </body>
