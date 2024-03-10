@@ -6,7 +6,7 @@ body {
 
 /* Primary and Secondary Colors */
 .primary-color {
-    color: #98B118; /* Primary color */
+    color: #4DB10C; /* Primary color */
 }
 
 .secondary-color {
@@ -15,7 +15,7 @@ body {
 
 /* Links */
 a {
-    color: #98B118; /* Primary color for links */
+    color: #4DB10C; /* Primary color for links */
     text-decoration: none; /* Remove underline from links */
 }
 
@@ -109,7 +109,7 @@ form textarea {
 
 form input[type="submit"] {
     width: 100%; /* Make submit button full width */
-    background-color: #98B118; /* Set submit button background color */
+    background-color: #4DB10C; /* Set submit button background color */
     color: #FFFFFF; /* Set submit button text color */
     border: none; /* Remove button border */
     cursor: pointer; /* Change cursor to pointer on hover */
@@ -122,7 +122,7 @@ form input[type="submit"]:hover {
 
 form button[type="submit"] {
     width: 90px; /* Make submit button full width */
-    background-color: #98B118; /* Set submit button background color */
+    background-color: #4DB10C; /* Set submit button background color */
     color: #FFFFFF; /* Set submit button text color */
     border: none; /* Remove button border */
     padding: 5px; /* Add padding to button */
