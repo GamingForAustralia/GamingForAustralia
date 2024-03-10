@@ -7,18 +7,44 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
-    
-    // Set up email details
-    $to = "contact@gamingforaustralia.com.au";
-    $subject = "Contact Form Submission";
-    $body = "Name: $name\nEmail: $email\n\n$message";
-    $headers = "From: $email";
 
-    // Send email
-    if (mail($to, $subject, $body, $headers)) {
+    // Set up PHPMailer
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+
+    // Include PHPMailer classes
+    require 'PHPMailer/Exception.php';
+    require 'PHPMailer/PHPMailer.php';
+    require 'PHPMailer/SMTP.php';
+
+    $mail = new PHPMailer(true);
+
+    // Enable verbose debug output
+    //$mail->SMTPDebug = 3;  // Enable verbose debug output
+
+    try {
+        //Server settings
+        $mail->isSMTP();
+        $mail->Host = 'mail.gamingforaustralia.com.au';  // Your SMTP server address
+        $mail->SMTPAuth = true;
+        $mail->Username = 'noreply@gamingforaustralia.com.au';
+        $mail->Password = ''; // MAKE SURE YOU SET THIS PASSWORD AND UPDATE IT BEFORE MOVING IT TO THE WEBSERVER
+        $mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
+        $mail->Port = 465;  // SMTP server port
+
+        //Recipients
+        $mail->setFrom($email, $name);
+        $mail->addAddress('contact@gamingforaustralia.com.au');
+
+        // Content
+        $mail->isHTML(false); // Set email format to HTML
+        $mail->Subject = 'Contact Form Submission';
+        $mail->Body    = "Name: $name\nEmail: $email\n\n$message";
+
+        $mail->send();
         $status = "Thank you for contacting us! We will get back to you soon.";
-    } else {
-        $status = "Oops! Something went wrong. Please try again later.";
+    } catch (Exception $e) {
+        $status = "Oops! Something went wrong. Please try again later. Error: {$mail->ErrorInfo}";
     }
 }
 ?>
