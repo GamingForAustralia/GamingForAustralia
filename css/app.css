@@ -137,3 +137,17 @@ form button[type="submit"]:hover {
 .card-section h4 {
     text-align: center;
 }
+
+/* Center align the name and vertically center the image */
+.card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Set a fixed height for the images */
+.card img {
+    height: 200px; /* Adjust as needed */
+}
