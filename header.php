@@ -6,7 +6,6 @@
                     <li class="name">
                         <h1><a href="" class="logo-link"><img src="img/logo.png" alt="GamingForAustralia Logo" class="logo"></a> GamingForAustralia</h1>
                     </li>
-                    <li class="toggle-topbar menu-icon hide-for-medium"><a><span>Menu</span></a></li>
                 </ul>
                 <section class="top-bar-section">
                     <ul class="right hide-for-medium">
