@@ -26,7 +26,6 @@ a:hover {
 /* Header */
 header {
     background-color: #333333; /* Dark header background */
-    padding: 20px; /* Add padding to header */
 }
 
 header h1 {
@@ -76,12 +75,12 @@ nav ul li a:hover {
 /* Logo */
 .logo-link {
     display: inline-block; /* Display logo as inline-block */
-    max-width: 200px; /* Limit maximum width of logo */
+    max-width: 100px; /* Limit maximum width of logo */
     width: 100%; /* Set logo width to full */
 }
 
 .logo {
-    width: 100%; /* Set logo width to full */
+    width: 100px; /* Set logo width to full */
     height: auto; /* Maintain aspect ratio */
 }
 
