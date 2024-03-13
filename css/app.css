@@ -132,3 +132,8 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
     background-color: #BC050A; /* Darken submit button color on hover */
 }
+
+/* Center align the name */
+.card-section h4 {
+    text-align: center;
+}
