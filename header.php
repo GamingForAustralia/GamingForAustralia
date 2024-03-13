@@ -11,6 +11,7 @@
                     <ul class="right hide-for-medium">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About</a></li>
+                        <li><a href="videos.php">Videos</a></li>
                         <li><a href="podcast.php">Podcast</a></li>
                         <li><a href="contact.php">Contact</a></li>
                     </ul>
