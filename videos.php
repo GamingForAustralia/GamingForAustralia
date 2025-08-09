@@ -1,23 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>GamingForAustralia - Videos</title>
-    <?php include('meta.php'); ?>
-</head>
-<body>
-    <!-- Header -->
-    <?php include('header.php'); ?>
+<?php
+$page_title = "GamingForAustralia - Videos";
+$page_description = "Watch GamingForAustralia YouTube videos - Gaming content from our Australian team.";
+ob_start();
+?>
 
-    <!-- Content -->
-    <div class="row">
-        <div class="column">
-            <h1>Welcome to GamingForAustralia</h1>
-            <p>This is the videos page for YouTube videos.</p>
+<!-- Content -->
+<div class="container">
+    <div class="section">
+        <div class="columns">
+            <div class="column">
+                <h1 class="title is-1 has-text-white">Welcome to GamingForAustralia</h1>
+                <p class="subtitle has-text-white">This is the videos page for YouTube videos.</p>
+            </div>
         </div>
     </div>
+</div>
 
-    <!-- Footer -->
-    <?php include('footer.php'); ?>
-</body>
-</html>
+<?php
+$content = ob_get_clean();
+include 'layout.php';
+?>
