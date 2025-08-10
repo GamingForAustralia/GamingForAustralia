@@ -2,6 +2,9 @@
 $page_title = "GamingForAustralia - Podcast";
 $page_description = "Listen to the GamingForAustralia podcast - Gaming discussions and content from our Australian team.";
 
+// Media folder path
+$media_path = '/home/gamingfo/podcasts.gamingforaustralia.com.au/media';
+
 // Function to parse episode XML data
 function parseEpisodeXML($xmlFile) {
     if (!file_exists($xmlFile)) {
@@ -28,48 +31,48 @@ function parseEpisodeXML($xmlFile) {
 $episodes = [
     [
         'date' => 'November 4, 2016',
-        'mp3' => '/home/gamingfo/podcasts.gamingforaustralia.com.au/media/2016-11-04_episode_1.mp3',
-        'xml' => '/home/gamingfo/podcasts.gamingforaustralia.com.au/media/2016-11-04_episode_1.xml'
+        'mp3' => $media_path . '/2016-11-04_episode_1.mp3',
+        'xml' => $media_path . '/2016-11-04_episode_1.xml'
     ],
     [
         'date' => 'November 4, 2016',
-        'mp3' => '/home/gamingfo/podcasts.gamingforaustralia.com.au/media/2016-11-04_episode_2.mp3',
-        'xml' => '/home/gamingfo/podcasts.gamingforaustralia.com.au/media/2016-11-04_episode_2.xml'
+        'mp3' => $media_path . '/2016-11-04_episode_2.mp3',
+        'xml' => $media_path . '/2016-11-04_episode_2.xml'
     ],
     [
         'date' => 'November 4, 2016',
-        'mp3' => '/home/gamingfo/podcasts.gamingforaustralia.com.au/media/2016-11-04_episode_3.mp3',
-        'xml' => '/home/gamingfo/podcasts.gamingforaustralia.com.au/media/2016-11-04_episode_3.xml'
+        'mp3' => $media_path . '/2016-11-04_episode_3.mp3',
+        'xml' => $media_path . '/2016-11-04_episode_3.xml'
     ],
     [
         'date' => 'November 4, 2016',
-        'mp3' => '/home/gamingfo/podcasts.gamingforaustralia.com.au/media/2016-11-04_episode_4.mp3',
-        'xml' => '/home/gamingfo/podcasts.gamingforaustralia.com.au/media/2016-11-04_episode_4.xml'
+        'mp3' => $media_path . '/2016-11-04_episode_4.mp3',
+        'xml' => $media_path . '/2016-11-04_episode_4.xml'
     ],
     [
         'date' => 'November 4, 2016',
-        'mp3' => '/home/gamingfo/podcasts.gamingforaustralia.com.au/media/2016-11-04_episode_5.mp3',
-        'xml' => '/home/gamingfo/podcasts.gamingforaustralia.com.au/media/2016-11-04_episode_5.xml'
+        'mp3' => $media_path . '/2016-11-04_episode_5.mp3',
+        'xml' => $media_path . '/2016-11-04_episode_5.xml'
     ],
     [
         'date' => 'November 4, 2016',
-        'mp3' => '/home/gamingfo/podcasts.gamingforaustralia.com.au/media/2016-11-04_episode_6.mp3',
-        'xml' => '/home/gamingfo/podcasts.gamingforaustralia.com.au/media/2016-11-04_episode_6.xml'
+        'mp3' => $media_path . '/2016-11-04_episode_6.mp3',
+        'xml' => $media_path . '/2016-11-04_episode_6.xml'
     ],
     [
         'date' => 'November 4, 2016',
-        'mp3' => '/home/gamingfo/podcasts.gamingforaustralia.com.au/media/2016-11-04_episode_7.mp3',
-        'xml' => '/home/gamingfo/podcasts.gamingforaustralia.com.au/media/2016-11-04_episode_7.xml'
+        'mp3' => $media_path . '/2016-11-04_episode_7.mp3',
+        'xml' => $media_path . '/2016-11-04_episode_7.xml'
     ],
     [
         'date' => 'November 4, 2016',
-        'mp3' => '/home/gamingfo/podcasts.gamingforaustralia.com.au/media/2016-11-04_episode_8.mp3',
-        'xml' => '/home/gamingfo/podcasts.gamingforaustralia.com.au/media/2016-11-04_episode_8.xml'
+        'mp3' => $media_path . '/2016-11-04_episode_8.mp3',
+        'xml' => $media_path . '/2016-11-04_episode_8.xml'
     ],
     [
         'date' => 'October 10, 2020',
-        'mp3' => '/home/gamingfo/podcasts.gamingforaustralia.com.au/media/2020-10-10-gfa_radio_1__this_is_not_a_podcast_.mp3',
-        'xml' => '/home/gamingfo/podcasts.gamingforaustralia.com.au/media/2020-10-10-gfa_radio_1__this_is_not_a_podcast_.xml'
+        'mp3' => $media_path . '/2020-10-10-gfa_radio_1__this_is_not_a_podcast_.mp3',
+        'xml' => $media_path . '/2020-10-10-gfa_radio_1__this_is_not_a_podcast_.xml'
     ]
 ];
 
@@ -83,7 +86,26 @@ ob_start();
             <div class="column">
                 <h1 class="title is-1 has-text-white">GamingForAustralia Podcast</h1>
                 <p class="has-text-white mb-5">Listen to our podcast episodes below. All episodes are hosted by the GFA Staff team.</p>
-                
+                <!-- Podcast Info -->
+                <div class="box has-background-dark mb-6">
+                    <div class="content has-text-centered">
+                        <h2 class="title is-3 has-text-white">
+                            <span class="icon-text">
+                                <span class="icon has-text-primary">
+                                    <i class="fas fa-info-circle"></i>
+                                </span>
+                                <span>About Our Podcast</span>
+                            </span>
+                        </h2>
+                        <p class="has-text-white">
+                            The GamingForAustralia podcast features discussions about gaming, technology, and Australian gaming culture. 
+                            All episodes are produced by our talented GFA Staff team and are available for free listening.
+                        </p>
+                        <p class="has-text-grey-light">
+                            <strong>Contact:</strong> podcasts@gamingforaustralia.com.au
+                        </p>
+                    </div>
+                </div>
                 <!-- Podcast Episodes -->
                 <div class="columns is-multiline">
                     <?php foreach ($episodes as $episode): ?>
@@ -94,7 +116,6 @@ ob_start();
                         $duration = $episodeData ? $episodeData['duration'] : '';
                         $author = $episodeData ? $episodeData['author'] : 'GFA Staff';
                         ?>
-                        
                         <div class="column is-12-tablet is-6-desktop">
                             <div class="box has-background-dark">
                                 <div class="media">
@@ -105,7 +126,7 @@ ob_start();
                                     </div>
                                     <div class="media-content">
                                         <h3 class="title is-4 has-text-white"><?php echo htmlspecialchars($title); ?></h3>
-                                        <p class="subtitle is-6 has-text-grey-light">
+                                        <p class="subtitle is-6 has-text-grey-light mt-2">
                                             <span class="icon-text">
                                                 <span class="icon">
                                                     <i class="fas fa-calendar"></i>
@@ -121,20 +142,11 @@ ob_start();
                                                 </span>
                                             <?php endif; ?>
                                         </p>
-                                        <p class="subtitle is-6 has-text-grey-light">
-                                            <span class="icon-text">
-                                                <span class="icon">
-                                                    <i class="fas fa-user"></i>
-                                                </span>
-                                                <span>By <?php echo htmlspecialchars($author); ?></span>
-                                            </span>
-                                        </p>
                                         <?php if ($description && $description !== $title): ?>
                                             <p class="has-text-white-ter mb-3"><?php echo htmlspecialchars($description); ?></p>
                                         <?php endif; ?>
                                     </div>
                                 </div>
-                                
                                 <!-- Custom Audio Player -->
                                 <div class="custom-audio-player" data-src="<?php echo htmlspecialchars($episode['mp3']); ?>">
                                     <audio preload="metadata"></audio>
@@ -172,27 +184,6 @@ ob_start();
                             </div>
                         </div>
                     <?php endforeach; ?>
-                </div>
-                
-                <!-- Podcast Info -->
-                <div class="box has-background-dark mt-6">
-                    <div class="content has-text-centered">
-                        <h2 class="title is-3 has-text-white">
-                            <span class="icon-text">
-                                <span class="icon has-text-primary">
-                                    <i class="fas fa-info-circle"></i>
-                                </span>
-                                <span>About Our Podcast</span>
-                            </span>
-                        </h2>
-                        <p class="has-text-white">
-                            The GamingForAustralia podcast features discussions about gaming, technology, and Australian gaming culture. 
-                            All episodes are produced by our talented GFA Staff team and are available for free listening.
-                        </p>
-                        <p class="has-text-grey-light">
-                            <strong>Contact:</strong> podcasts@gamingforaustralia.com.au
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>
