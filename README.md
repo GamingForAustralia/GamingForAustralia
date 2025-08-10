@@ -9,8 +9,6 @@ GamingForAustralia is a modern stream team website built using PHP and the Bulma
 - [Technology Stack](#technology-stack)
 - [Project Structure](#project-structure)
 - [Content Management](#content-management)
-- [Installation](#installation)
-- [Contributing](#contributing)
 
 ## Introduction
 
@@ -180,22 +178,3 @@ Edit the `$episodes` array in `podcast.php`:
     'xml' => $media_path . '/episode_metadata.xml'
 ]
 ```
-
-## Installation
-
-1. Clone the repository to your web server
-2. Ensure PHP 8+ is installed and configured
-3. Configure your web server to serve PHP files
-4. Update streaming URLs in `podcast.php` if needed
-5. Add your content images to appropriate directories
-6. Customize content arrays in each PHP file
-
-## Contributing
-
-This project follows modern PHP best practices and emphasizes:
-- Security through `htmlspecialchars()` output escaping
-- Maintainability through centralized layout systems
-- Performance through efficient asset loading and caching
-- Accessibility through semantic HTML and proper ARIA labels
-
-For contributions, please maintain the existing code style and ensure all dynamic content is properly escaped for security.
