@@ -5,6 +5,9 @@ $page_description = "Listen to the GamingForAustralia podcast - Gaming discussio
 // Media folder path
 $media_path = '/home/gamingfo/podcasts.gamingforaustralia.com.au/media';
 
+// Streaming URL for audio files
+$stream_url = 'https://podcasts.gamingforaustralia.com.au/media';
+
 // Function to parse episode XML data
 function parseEpisodeXML($xmlFile) {
     if (!file_exists($xmlFile)) {
@@ -31,47 +34,47 @@ function parseEpisodeXML($xmlFile) {
 $episodes = [
     [
         'date' => 'November 4, 2016',
-        'mp3' => $media_path . '/2016-11-04_episode_1.mp3',
+        'mp3' => $stream_url . '/2016-11-04_episode_1.mp3',
         'xml' => $media_path . '/2016-11-04_episode_1.xml'
     ],
     [
         'date' => 'November 4, 2016',
-        'mp3' => $media_path . '/2016-11-04_episode_2.mp3',
+        'mp3' => $stream_url . '/2016-11-04_episode_2.mp3',
         'xml' => $media_path . '/2016-11-04_episode_2.xml'
     ],
     [
         'date' => 'November 4, 2016',
-        'mp3' => $media_path . '/2016-11-04_episode_3.mp3',
+        'mp3' => $stream_url . '/2016-11-04_episode_3.mp3',
         'xml' => $media_path . '/2016-11-04_episode_3.xml'
     ],
     [
         'date' => 'November 4, 2016',
-        'mp3' => $media_path . '/2016-11-04_episode_4.mp3',
+        'mp3' => $stream_url . '/2016-11-04_episode_4.mp3',
         'xml' => $media_path . '/2016-11-04_episode_4.xml'
     ],
     [
         'date' => 'November 4, 2016',
-        'mp3' => $media_path . '/2016-11-04_episode_5.mp3',
+        'mp3' => $stream_url . '/2016-11-04_episode_5.mp3',
         'xml' => $media_path . '/2016-11-04_episode_5.xml'
     ],
     [
         'date' => 'November 4, 2016',
-        'mp3' => $media_path . '/2016-11-04_episode_6.mp3',
+        'mp3' => $stream_url . '/2016-11-04_episode_6.mp3',
         'xml' => $media_path . '/2016-11-04_episode_6.xml'
     ],
     [
         'date' => 'November 4, 2016',
-        'mp3' => $media_path . '/2016-11-04_episode_7.mp3',
+        'mp3' => $stream_url . '/2016-11-04_episode_7.mp3',
         'xml' => $media_path . '/2016-11-04_episode_7.xml'
     ],
     [
         'date' => 'November 4, 2016',
-        'mp3' => $media_path . '/2016-11-04_episode_8.mp3',
+        'mp3' => $stream_url . '/2016-11-04_episode_8.mp3',
         'xml' => $media_path . '/2016-11-04_episode_8.xml'
     ],
     [
         'date' => 'October 10, 2020',
-        'mp3' => $media_path . '/2020-10-10-gfa_radio_1__this_is_not_a_podcast_.mp3',
+        'mp3' => $stream_url . '/2020-10-10-gfa_radio_1__this_is_not_a_podcast_.mp3',
         'xml' => $media_path . '/2020-10-10-gfa_radio_1__this_is_not_a_podcast_.xml'
     ]
 ];
