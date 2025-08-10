@@ -1,6 +1,46 @@
 <?php
 $page_title = "GamingForAustralia - Videos";
 $page_description = "Watch GamingForAustralia YouTube videos - Gaming content from our Australian team.";
+
+// Define playlists array for easy management
+$playlists = [
+    [
+        'title' => 'Life is Strange 2',
+        'subtitle' => 'Complete Playthrough Series',
+        'description' => 'Join us as we experience the emotional journey of Sean and Daniel Diaz in this award-winning narrative adventure game.',
+        'image' => 'img/featured-videos/LifeIsStrange2.jpg',
+        'playlist_url' => 'https://www.youtube.com/playlist?list=PLKg1x2WfdZdYvQgpXx4wVmUHW6K70MpLm'
+    ],
+    [
+        'title' => 'Detroit: Become Human',
+        'subtitle' => 'Complete Playthrough Series',
+        'description' => 'Experience the future of artificial intelligence and humanity through the stories of Connor, Markus, and Kara.',
+        'image' => 'img/featured-videos/DetroitBecomeHuman.jpg',
+        'playlist_url' => 'https://www.youtube.com/playlist?list=PLKg1x2WfdZdZtZWsjj_wttiQz1VbRNJIU'
+    ],
+    [
+        'title' => 'Life Is Strange: True Colors',
+        'subtitle' => 'Complete Playthrough Series',
+        'description' => 'Follow Alex Chen\'s story as she uses her psychic power of empathy to uncover the truth behind her brother\'s death.',
+        'image' => 'img/featured-videos/LifeIsStrangeTrueColours.jpg',
+        'playlist_url' => 'https://www.youtube.com/playlist?list=PLKg1x2WfdZdYT3ffck2IvCDKqy-1oP2Ph'
+    ],
+    [
+        'title' => 'Quantum Break',
+        'subtitle' => 'Complete Playthrough Series',
+        'description' => 'Master time manipulation powers in this sci-fi thriller that blends intense gameplay with live-action episodes.',
+        'image' => 'img/featured-videos/QuantumBreak.jpg',
+        'playlist_url' => 'https://www.youtube.com/playlist?list=PLKg1x2WfdZdZltGjRWcWLA3ro_xnjx4yf'
+    ],
+    [
+        'title' => 'A Plague Tale: Requiem',
+        'subtitle' => 'Complete Playthrough Series',
+        'description' => 'Continue Amicia and Hugo\'s heart-wrenching journey in this stunning sequel set in medieval France.',
+        'image' => 'img/featured-videos/APlagueTaleRequiem.jpg',
+        'playlist_url' => 'https://www.youtube.com/playlist?list=PLKg1x2WfdZdaoTsJAOHy56Y9BHFj0NLJG'
+    ]
+];
+
 ob_start();
 ?>
 
@@ -39,211 +79,50 @@ ob_start();
                     </span>
                 </h2>
                 <div class="columns is-multiline">
-                    <!-- Life is Strange 2 -->
-                    <div class="column is-12-tablet is-6-desktop">
-                        <div class="box has-background-dark">
-                            <div class="media">
-                                <div class="media-left">
-                                    <span class="icon is-large has-text-primary">
-                                        <i class="fas fa-play-circle fa-2x"></i>
-                                    </span>
-                                </div>
-                                <div class="media-content">
-                                    <div class="level">
-                                        <div class="level-left">
-                                            <div class="level-item">
-                                                <div>
-                                                    <h3 class="title is-4 has-text-white">Life is Strange 2</h3>
-                                                    <p class="subtitle is-6 has-text-grey-light">Complete Playthrough Series</p>
+                    <?php foreach ($playlists as $playlist): ?>
+                        <div class="column is-12-tablet is-6-desktop">
+                            <div class="box has-background-dark">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="icon is-large has-text-primary">
+                                            <i class="fas fa-play-circle fa-2x"></i>
+                                        </span>
+                                    </div>
+                                    <div class="media-content">
+                                        <div class="level">
+                                            <div class="level-left">
+                                                <div class="level-item">
+                                                    <div>
+                                                        <h3 class="title is-4 has-text-white"><?php echo htmlspecialchars($playlist['title']); ?></h3>
+                                                        <p class="subtitle is-6 has-text-grey-light"><?php echo htmlspecialchars($playlist['subtitle']); ?></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="level-right">
+                                                <div class="level-item">
+                                                    <a href="<?php echo htmlspecialchars($playlist['playlist_url']); ?>" 
+                                                       target="_blank" class="button is-primary">
+                                                        <span class="icon">
+                                                            <i class="fab fa-youtube"></i>
+                                                        </span>
+                                                        <span>Watch Playlist</span>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="level-right">
-                                            <div class="level-item">
-                                                <a href="https://www.youtube.com/playlist?list=PLKg1x2WfdZdYvQgpXx4wVmUHW6K70MpLm" 
-                                                   target="_blank" class="button is-primary">
-                                                    <span class="icon">
-                                                        <i class="fab fa-youtube"></i>
-                                                    </span>
-                                                    <span>Watch Playlist</span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <figure class="image mb-4">
+                                            <img src="<?php echo htmlspecialchars($playlist['image']); ?>" 
+                                                 alt="<?php echo htmlspecialchars($playlist['title']); ?> Cover" 
+                                                 style="max-width: 465px; height: auto;">
+                                        </figure>
+                                        <p class="has-text-white-ter mb-4">
+                                            <?php echo htmlspecialchars($playlist['description']); ?>
+                                        </p>
                                     </div>
-                                    <figure class="image mb-4">
-                                        <img src="img/featured-videos/LifeIsStrange2.jpg" alt="Life is Strange 2 Cover" style="max-width: 465px; height: auto;">
-                                    </figure>
-                                    <p class="has-text-white-ter mb-4">
-                                        Join us as we experience the emotional journey of Sean and Daniel Diaz in this award-winning narrative adventure game.
-                                    </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Detroit: Become Human -->
-                    <div class="column is-12-tablet is-6-desktop">
-                        <div class="box has-background-dark">
-                            <div class="media">
-                                <div class="media-left">
-                                    <span class="icon is-large has-text-primary">
-                                        <i class="fas fa-play-circle fa-2x"></i>
-                                    </span>
-                                </div>
-                                <div class="media-content">
-                                    <div class="level">
-                                        <div class="level-left">
-                                            <div class="level-item">
-                                                <div>
-                                                    <h3 class="title is-4 has-text-white">Detroit: Become Human</h3>
-                                                    <p class="subtitle is-6 has-text-grey-light">Complete Playthrough Series</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="level-right">
-                                            <div class="level-item">
-                                                <a href="https://www.youtube.com/playlist?list=PLKg1x2WfdZdZtZWsjj_wttiQz1VbRNJIU" 
-                                                   target="_blank" class="button is-primary">
-                                                    <span class="icon">
-                                                        <i class="fab fa-youtube"></i>
-                                                    </span>
-                                                    <span>Watch Playlist</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <figure class="image mb-4">
-                                        <img src="img/featured-videos/DetroitBecomeHuman.jpg" alt="Detroit: Become Human Cover" style="max-width: 465px; height: auto;">
-                                    </figure>
-                                    <p class="has-text-white-ter mb-4">
-                                        Experience the future of artificial intelligence and humanity through the stories of Connor, Markus, and Kara.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Life Is Strange: True Colors -->
-                    <div class="column is-12-tablet is-6-desktop">
-                        <div class="box has-background-dark">
-                            <div class="media">
-                                <div class="media-left">
-                                    <span class="icon is-large has-text-primary">
-                                        <i class="fas fa-play-circle fa-2x"></i>
-                                    </span>
-                                </div>
-                                <div class="media-content">
-                                    <div class="level">
-                                        <div class="level-left">
-                                            <div class="level-item">
-                                                <div>
-                                                    <h3 class="title is-4 has-text-white">Life Is Strange: True Colors</h3>
-                                                    <p class="subtitle is-6 has-text-grey-light">Complete Playthrough Series</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="level-right">
-                                            <div class="level-item">
-                                                <a href="https://www.youtube.com/playlist?list=PLKg1x2WfdZdYT3ffck2IvCDKqy-1oP2Ph" 
-                                                   target="_blank" class="button is-primary">
-                                                    <span class="icon">
-                                                        <i class="fab fa-youtube"></i>
-                                                    </span>
-                                                    <span>Watch Playlist</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <figure class="image mb-4">
-                                        <img src="img/featured-videos/LifeIsStrangeTrueColours.jpg" alt="Life Is Strange: True Colors Cover" style="max-width: 465px; height: auto;">
-                                    </figure>
-                                    <p class="has-text-white-ter mb-4">
-                                        Follow Alex Chen's story as she uses her psychic power of empathy to uncover the truth behind her brother's death.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Quantum Break -->
-                    <div class="column is-12-tablet is-6-desktop">
-                        <div class="box has-background-dark">
-                            <div class="media">
-                                <div class="media-left">
-                                    <span class="icon is-large has-text-primary">
-                                        <i class="fas fa-play-circle fa-2x"></i>
-                                    </span>
-                                </div>
-                                <div class="media-content">
-                                    <div class="level">
-                                        <div class="level-left">
-                                            <div class="level-item">
-                                                <div>
-                                                    <h3 class="title is-4 has-text-white">Quantum Break</h3>
-                                                    <p class="subtitle is-6 has-text-grey-light">Complete Playthrough Series</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="level-right">
-                                            <div class="level-item">
-                                                <a href="https://www.youtube.com/playlist?list=PLKg1x2WfdZdZltGjRWcWLA3ro_xnjx4yf" 
-                                                   target="_blank" class="button is-primary">
-                                                    <span class="icon">
-                                                        <i class="fab fa-youtube"></i>
-                                                    </span>
-                                                    <span>Watch Playlist</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <figure class="image mb-4">
-                                        <img src="img/featured-videos/QuantumBreak.jpg" alt="Quantum Break Cover" style="max-width: 465px; height: auto;">
-                                    </figure>
-                                    <p class="has-text-white-ter mb-4">
-                                        Master time manipulation powers in this sci-fi thriller that blends intense gameplay with live-action episodes.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- A Plague Tale: Requiem -->
-                    <div class="column is-12-tablet is-6-desktop">
-                        <div class="box has-background-dark">
-                            <div class="media">
-                                <div class="media-left">
-                                    <span class="icon is-large has-text-primary">
-                                        <i class="fas fa-play-circle fa-2x"></i>
-                                    </span>
-                                </div>
-                                <div class="media-content">
-                                    <div class="level">
-                                        <div class="level-left">
-                                            <div class="level-item">
-                                                <div>
-                                                    <h3 class="title is-4 has-text-white">A Plague Tale: Requiem</h3>
-                                                    <p class="subtitle is-6 has-text-grey-light">Complete Playthrough Series</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="level-right">
-                                            <div class="level-item">
-                                                <a href="https://www.youtube.com/playlist?list=PLKg1x2WfdZdaoTsJAOHy56Y9BHFj0NLJG" 
-                                                   target="_blank" class="button is-primary">
-                                                    <span class="icon">
-                                                        <i class="fab fa-youtube"></i>
-                                                    </span>
-                                                    <span>Watch Playlist</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <figure class="image mb-4">
-                                        <img src="img/featured-videos/APlagueTaleRequiem.jpg" alt="A Plague Tale: Requiem Cover" style="max-width: 465px; height: auto;">
-                                    </figure>
-                                    <p class="has-text-white-ter mb-4">
-                                        Continue Amicia and Hugo's heart-wrenching journey in this stunning sequel set in medieval France.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
                 <!-- YouTube Channel CTA -->
                 <div class="box has-background-dark mt-6">
