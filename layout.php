@@ -39,7 +39,7 @@ if (!isset($content)) {
         <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="index.php">
-                    <img src="img/logo.png" alt="GamingForAustralia Logo" width="112" height="28">
+                    <img src="img/logo.png" alt="GamingForAustralia Logo" class="navbar-logo">
                     <span class="ml-2 has-text-white is-size-4">GamingForAustralia</span>
                 </a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
