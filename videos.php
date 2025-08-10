@@ -51,6 +51,9 @@ ob_start();
                                 <div class="media-content">
                                     <h3 class="title is-4 has-text-white">Life is Strange 2</h3>
                                     <p class="subtitle is-6 has-text-grey-light">Complete Playthrough Series</p>
+                                    <figure class="image mb-4">
+                                        <img src="img/featured-videos/LifeIsStrange2.jpg" alt="Life is Strange 2 Cover" style="max-width: 465px; height: auto;">
+                                    </figure>
                                     <p class="has-text-white-ter mb-4">
                                         Join us as we experience the emotional journey of Sean and Daniel Diaz in this award-winning narrative adventure game.
                                     </p>
@@ -77,6 +80,9 @@ ob_start();
                                 <div class="media-content">
                                     <h3 class="title is-4 has-text-white">Detroit: Become Human</h3>
                                     <p class="subtitle is-6 has-text-grey-light">Complete Playthrough Series</p>
+                                    <figure class="image mb-4">
+                                        <img src="img/featured-videos/DetroitBecomeHuman.jpg" alt="Detroit: Become Human Cover" style="max-width: 465px; height: auto;">
+                                    </figure>
                                     <p class="has-text-white-ter mb-4">
                                         Experience the future of artificial intelligence and humanity through the stories of Connor, Markus, and Kara.
                                     </p>
@@ -103,6 +109,9 @@ ob_start();
                                 <div class="media-content">
                                     <h3 class="title is-4 has-text-white">Life Is Strange: True Colors</h3>
                                     <p class="subtitle is-6 has-text-grey-light">Complete Playthrough Series</p>
+                                    <figure class="image mb-4">
+                                        <img src="img/featured-videos/LifeIsStrangeTrueColours.jpg" alt="Life Is Strange: True Colors Cover" style="max-width: 465px; height: auto;">
+                                    </figure>
                                     <p class="has-text-white-ter mb-4">
                                         Follow Alex Chen's story as she uses her psychic power of empathy to uncover the truth behind her brother's death.
                                     </p>
@@ -129,6 +138,9 @@ ob_start();
                                 <div class="media-content">
                                     <h3 class="title is-4 has-text-white">Quantum Break</h3>
                                     <p class="subtitle is-6 has-text-grey-light">Complete Playthrough Series</p>
+                                    <figure class="image mb-4">
+                                        <img src="img/featured-videos/QuantumBreak.jpg" alt="Quantum Break Cover" style="max-width: 465px; height: auto;">
+                                    </figure>
                                     <p class="has-text-white-ter mb-4">
                                         Master time manipulation powers in this sci-fi thriller that blends intense gameplay with live-action episodes.
                                     </p>
@@ -155,6 +167,9 @@ ob_start();
                                 <div class="media-content">
                                     <h3 class="title is-4 has-text-white">A Plague Tale: Requiem</h3>
                                     <p class="subtitle is-6 has-text-grey-light">Complete Playthrough Series</p>
+                                    <figure class="image mb-4">
+                                        <img src="img/featured-videos/APlagueTaleRequiem.jpg" alt="A Plague Tale: Requiem Cover" style="max-width: 465px; height: auto;">
+                                    </figure>
                                     <p class="has-text-white-ter mb-4">
                                         Continue Amicia and Hugo's heart-wrenching journey in this stunning sequel set in medieval France.
                                     </p>
