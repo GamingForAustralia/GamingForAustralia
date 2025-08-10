@@ -76,6 +76,30 @@ a:hover {
     border-color: #BC050A;
 }
 
+.button.is-secondary {
+    background-color: #BC050A;
+    border-color: #BC050A;
+    color: #FFFFFF;
+}
+
+.button.is-secondary:hover {
+    background-color: #4DB10C;
+    border-color: #4DB10C;
+    color: #FFFFFF;
+}
+
+.button.is-info {
+    background-color: #555555;
+    border-color: #555555;
+    color: #FFFFFF;
+}
+
+.button.is-info:hover {
+    background-color: #4DB10C;
+    border-color: #4DB10C;
+    color: #FFFFFF;
+}
+
 /* Form customizations */
 .input, .textarea {
     background-color: #333333;
@@ -96,6 +120,11 @@ a:hover {
 
 .card-image .image {
     border-radius: 6px 6px 0 0;
+}
+
+/* Icon spacing - specific for main title only */
+.title.is-2 .icon-text .icon {
+    margin-right: 1rem;
 }
 
 /* Notification customizations */
