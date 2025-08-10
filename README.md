@@ -56,22 +56,70 @@ GamingForAustralia is a comprehensive website dedicated to an Australian gaming 
 
 ```
 GamingForAustralia/
-├── index.php              # Home page with stream team introduction
 ├── about.php              # Team member profiles
-├── videos.php             # YouTube playlist showcase
-├── podcast.php            # Podcast episodes with custom player
+├── index.php              # Home page with stream team introduction
 ├── layout.php             # Centralized template system
+├── podcast.php            # Podcast episodes with custom player
+├── videos.php             # YouTube playlist showcase
+├── .gitattributes         # Git configuration file
+├── README.md              # Project documentation
 ├── css/
 │   └── app.css            # Custom Bulma theme and component styles
 ├── js/
 │   └── app.js             # Navigation and custom audio player logic
 ├── img/
 │   ├── favicon/           # Multi-format favicon collection
+│   │   ├── 16x16.png         # 16x16 favicon
+│   │   ├── 32x32.png         # 32x32 favicon
+│   │   ├── 48x48.png         # 48x48 favicon
+│   │   ├── 64x64.png         # 64x64 favicon
+│   │   ├── apple-touch-icon.png # iOS Safari icon
+│   │   ├── favicon.ico       # Legacy ICO format
+│   │   └── favicon.png       # Standard PNG favicon
 │   ├── profile/           # Team member profile images
+│   │   ├── Darkness.png      # FallenAngelDarkness profile image
+│   │   ├── gfaUnDead.png     # gfaUnDead profile image
+│   │   ├── MrBanyanyaa.png   # MrBanyanyaa profile image
+│   │   └── TheFez.png        # TheFez profile image
 │   ├── featured-videos/   # YouTube playlist cover images
-│   └── logo files         # Brand logos and assets
-└── README.md              # Project documentation
+│   │   ├── APlagueTaleRequiem.jpg    # A Plague Tale: Requiem cover
+│   │   ├── DetroitBecomeHuman.jpg    # Detroit: Become Human cover
+│   │   ├── LifeIsStrange2.jpg        # Life is Strange 2 cover
+│   │   ├── LifeIsStrangeTrueColours.jpg # Life Is Strange: True Colors cover
+│   │   └── QuantumBreak.jpg          # Quantum Break cover
+│   ├── logo-upscaled.jpg  # High resolution logo (JPEG)
+│   ├── logo-upscaled.png  # High resolution logo (PNG)
+│   ├── logo.jpg           # Standard logo (JPEG)
+│   └── logo.png           # Standard logo (PNG, used in navbar)
+└── .git/                  # Git repository metadata
 ```
+
+## File Overview
+
+### Core PHP Files
+- **index.php**: Homepage featuring stream team explanation, community information, and navigation buttons
+- **about.php**: Team member showcase with profile cards and descriptions
+- **videos.php**: YouTube playlist gallery with cover images and streaming links
+- **podcast.php**: Podcast episode listing with custom secure audio player and XML metadata
+- **layout.php**: Master template containing HTML structure, navigation, and footer
+
+### Styling & Assets
+- **css/app.css**: Custom Bulma theme with dark gaming colors, audio player styles, and responsive layouts
+- **js/app.js**: Vanilla JavaScript for navbar functionality and comprehensive custom audio player controls
+- **img/**: Organized image assets including logos, favicons, profile pictures, and video covers
+
+### Configuration Files
+- **.gitattributes**: Git configuration for line endings and file handling
+- **.git/**: Git repository metadata and version control information
+- **README.md**: Comprehensive project documentation
+
+### Key Features by File
+- **layout.php**: Centralized template system, CSS cache busting with unique IDs, responsive navigation
+- **podcast.php**: XML metadata parsing, secure streaming URLs, custom audio player integration
+- **videos.php**: Dynamic playlist generation, YouTube integration, responsive card layouts
+- **about.php**: Team member management through PHP arrays, uniform card heights
+- **css/app.css**: Dark theme implementation, custom audio player styling, Bulma framework customizations
+- **js/app.js**: Mobile navigation burger menu, comprehensive audio player with security features
 
 ## Content Management
 
