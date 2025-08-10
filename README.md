@@ -133,7 +133,7 @@ Podcasts/ (External Media Directory)
 
 ### External Media Directory
 - **Podcasts/**: External directory containing podcast audio files and XML metadata
-  - **Audio Files (.mp3)**: Streaming audio content served via https://podcasts.gamingforaustralia.com.au/media/
+  - **Audio Files (.mp3)**: Streaming audio content served via https://podcasts.gamingforaustralia.com.au/
   - **Metadata Files (.xml)**: Episode information including titles, descriptions, duration, and author details
   - **File Structure**: Each episode has both an MP3 audio file and corresponding XML metadata file
 

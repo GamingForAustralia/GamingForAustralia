@@ -6,7 +6,7 @@ $page_description = "Listen to the GamingForAustralia podcast - Gaming discussio
 $media_path = '/home/gamingfo/podcasts.gamingforaustralia.com.au/media';
 
 // Streaming URL for audio files
-$stream_url = 'https://podcasts.gamingforaustralia.com.au/media';
+$stream_url = 'https://podcasts.gamingforaustralia.com.au';
 
 // Function to parse episode XML data
 function parseEpisodeXML($xmlFile) {
