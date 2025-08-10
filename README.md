@@ -92,6 +92,26 @@ GamingForAustralia/
 │   ├── logo.jpg           # Standard logo (JPEG)
 │   └── logo.png           # Standard logo (PNG, used in navbar)
 └── .git/                  # Git repository metadata
+
+Podcasts/ (External Media Directory)
+├── 2016-11-04_episode_1.mp3    # Episode 1 audio file
+├── 2016-11-04_episode_1.xml    # Episode 1 metadata
+├── 2016-11-04_episode_2.mp3    # Episode 2 audio file
+├── 2016-11-04_episode_2.xml    # Episode 2 metadata
+├── 2016-11-04_episode_3.mp3    # Episode 3 audio file
+├── 2016-11-04_episode_3.xml    # Episode 3 metadata
+├── 2016-11-04_episode_4.mp3    # Episode 4 audio file
+├── 2016-11-04_episode_4.xml    # Episode 4 metadata
+├── 2016-11-04_episode_5.mp3    # Episode 5 audio file
+├── 2016-11-04_episode_5.xml    # Episode 5 metadata
+├── 2016-11-04_episode_6.mp3    # Episode 6 audio file
+├── 2016-11-04_episode_6.xml    # Episode 6 metadata
+├── 2016-11-04_episode_7.mp3    # Episode 7 audio file
+├── 2016-11-04_episode_7.xml    # Episode 7 metadata
+├── 2016-11-04_episode_8.mp3    # Episode 8 audio file
+├── 2016-11-04_episode_8.xml    # Episode 8 metadata
+├── 2020-10-10-gfa_radio_1__this_is_not_a_podcast_.mp3  # GFA Radio Episode 1 audio
+└── 2020-10-10-gfa_radio_1__this_is_not_a_podcast_.xml  # GFA Radio Episode 1 metadata
 ```
 
 ## File Overview
@@ -112,6 +132,12 @@ GamingForAustralia/
 - **.gitattributes**: Git configuration for line endings and file handling
 - **.git/**: Git repository metadata and version control information
 - **README.md**: Comprehensive project documentation
+
+### External Media Directory
+- **Podcasts/**: External directory containing podcast audio files and XML metadata
+  - **Audio Files (.mp3)**: Streaming audio content served via https://podcasts.gamingforaustralia.com.au/media/
+  - **Metadata Files (.xml)**: Episode information including titles, descriptions, duration, and author details
+  - **File Structure**: Each episode has both an MP3 audio file and corresponding XML metadata file
 
 ### Key Features by File
 - **layout.php**: Centralized template system, CSS cache busting with unique IDs, responsive navigation
