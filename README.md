@@ -56,9 +56,9 @@ GamingForAustralia is a comprehensive website dedicated to an Australian gaming 
 
 ```
 GamingForAustralia/
-├── about.php              # Team member profiles
-├── index.php              # Home page with stream team introduction
 ├── layout.php             # Centralized template system
+├── index.php              # Home page with stream team introduction
+├── about.php              # Team member profiles
 ├── podcast.php            # Podcast episodes with custom player
 ├── videos.php             # YouTube playlist showcase
 ├── .gitattributes         # Git configuration file
